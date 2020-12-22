@@ -12,7 +12,7 @@ export default class RangeInputComponent extends Component {
         this.state={
             value:value
         };
-        this.props.onChange(value)
+        // this.props.onChange(value)
     }
     render(){
         const domain=this.props.domain;
@@ -44,6 +44,8 @@ export default class RangeInputComponent extends Component {
                     values={value}
                     onChange={(values) =>{
                         this.setState({value:values})
+
+                        if(this.props.onChange)
                         this.props.onChange(values)
                     }}
                     renderTrack={({ props, children }) => (

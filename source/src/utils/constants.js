@@ -51,7 +51,7 @@ export const routePaths={
 export const SIDEBAR_RATIO=4
 export const BOX_SHADOW='5px 5px 5px 5px #707070'
 export const BODY={
-    FLEX:4,
+    FLEX:5,
     PADDING_TOP:40
 }
 

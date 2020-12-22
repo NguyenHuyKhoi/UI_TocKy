@@ -41,6 +41,8 @@ export default class LabeledInputComponent extends Component {
                 <input 
                     onChange={e=>{
                         this.setState({value:e.target.value});
+
+                        if(this.props.onChange)
                         this.props.onChange(e.target.value)
                     }}
                     value={value}

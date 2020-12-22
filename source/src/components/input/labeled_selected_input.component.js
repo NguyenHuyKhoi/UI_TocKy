@@ -49,6 +49,8 @@ export default class LabeledSelectedInputComponent extends Component {
             onChange={(option) => {
               this.setState({value: option.value});
               console.log('selected_input', option.value);
+
+              if(this.props.onChange)
               this.props.onChange(option.value);
             }}
             options={domain}

@@ -22,6 +22,8 @@ export default  class ButtonInputComponent extends Component {
                     onChange={e=>{
                         this.setState({value:e.target.value});
                         console.log('enter :',e.target.value)
+
+                        if(this.props.onChange)
                         this.props.onChange(e.target.value)}
                     }
                     value={value}
@@ -31,6 +33,8 @@ export default  class ButtonInputComponent extends Component {
                     <ButtonComponent 
                         onClick={()=>{
                             this.setState({value:''})
+
+                            if(this.props.onClick)
                             this.props.onClick()
                         }}
                         label={btn_label!==undefined?btn_label:'Send'} />

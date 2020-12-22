@@ -263,7 +263,7 @@
             {
                 "subject":"Âm đầu",
                 "title":"Nhóm các phụ âm có cùng dạng chữ, cùng phát âm với phím tốc kí và không cần ghi nhớ (P1)",
-                "content":"s t k c h s k t h c s k h c t",
+                "content"      :"s t k c h s k t h c s k h c t",
                 "steno_content":"S T K K H S K T H K S K H K T",
                 "rules":5,
                 "level":"Dễ",
