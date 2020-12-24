@@ -1,7 +1,7 @@
 //import from library 
-import React, {Component} from 'react';
-import {TEXT_SIZES} from '../../utils/constants';
-import {BLACK} from '../../utils/palette';
+import React, { Component } from 'react';
+import { TEXT_SIZES } from '../../utils/constants';
+import { BLACK } from '../../utils/palette';
 import Select from 'react-select';
 
 export default class LabeledSelectedInputComponent extends Component {
@@ -21,10 +21,10 @@ export default class LabeledSelectedInputComponent extends Component {
 
 
     let domain = this.props.domain.map(item => {
-      return {value: item, label: item};
+      return { value: item, label: item };
     });
 
-    let option = {value: value, label: value};
+    let option = { value: value, label: value };
 
 
     console.log('domain_select', domain);
@@ -42,16 +42,16 @@ export default class LabeledSelectedInputComponent extends Component {
 
         }
 
-        <div style={{...styles.body, marginTop: hide_label ? 0 : 15}}>
+        <div style={{ ...styles.body, marginTop: hide_label ? 0 : 15 }}>
           <Select
-            style={{...styles.select}}
+            style={{ ...styles.select }}
             value={option}
             onChange={(option) => {
-              this.setState({value: option.value});
-              console.log('selected_input', option.value);
+              this.setState({ value: option.value });
+              console.log('selected_input', option);
 
-              if(this.props.onChange)
-              this.props.onChange(option.value);
+              if (this.props.onChange)
+                this.props.onChange(option.value);
             }}
             options={domain}
           />
